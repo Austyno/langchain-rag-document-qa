@@ -2,9 +2,10 @@
   "name": "document-qa-backend",
   "version": "1.0.0",
   "description": "Backend for Document Q&A System with RAG",
+  "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --esm src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
